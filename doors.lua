@@ -138,8 +138,8 @@ while task.wait(0.4) do
                         h.Enabled = true
                         if v.Name == "Door" and v:FindFirstChild("Door") then
                             h.Adornee = v.Door
-                        elseif v.Name == "RushNew" then
-                            local rushPart = v:FindFirstChild("RushPart")
+                        elseif v.Name == "RushMoving" then
+                            local rushPart = v:FindFirstChild("RushNew")
                             if rushPart then
                                 weldPartToRushPart(rushPart)
                             end
